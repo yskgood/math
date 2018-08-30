@@ -28,7 +28,7 @@ public class PrimeNumberTest {
     @Test
     public void primeFactorization() {
 
-        List<Integer> factors = PrimeNumber.primeFactorization(900000);
+        List<Integer> factors = PrimeNumber.primeFactorization(9);
         for (int i = 0; i < factors.size(); i++) {
             System.out.println(factors.get(i));
         }
