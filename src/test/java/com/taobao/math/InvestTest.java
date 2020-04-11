@@ -25,9 +25,9 @@ public class InvestTest {
         //每次递增
         int incSize = 300;
         //初始股价
-        double start = 13;
+        double start = 11;
         //买入总金额
-        int total = 50000;
+        int total = 20000;
         //当前买入总金额
         double sum = 0;
         //剩余金额
