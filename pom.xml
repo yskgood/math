@@ -30,6 +30,13 @@
             <version>3.0.6</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.reactivex/rxjava-computation-expressions -->
+        <dependency>
+            <groupId>io.reactivex</groupId>
+            <artifactId>rxjava-computation-expressions</artifactId>
+            <version>0.21.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>

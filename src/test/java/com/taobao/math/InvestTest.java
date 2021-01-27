@@ -11,7 +11,7 @@ public class InvestTest {
 
     @Test
     public void test() {
-        double des = 0.01;
+        double des = 0.03;
         for (int i = 0; i < 5; i++) {
             calculate(des);
             des += 0.01;
@@ -21,13 +21,13 @@ public class InvestTest {
     private void calculate(double des) {
         System.out.println("================" + des + "=================");
         //每次买入
-        int size = 400;
+        int size = 300;
         //每次递增
         int incSize = 300;
         //初始股价
-        double start = 11;
+        double start = 12.85;
         //买入总金额
-        int total = 20000;
+        int total = 30000;
         //当前买入总金额
         double sum = 0;
         //剩余金额
@@ -39,7 +39,7 @@ public class InvestTest {
             sum += start * size;
             less = total - sum;
             count += size;
-            System.out.println(String.format("本次买入：%d 买入价格：%.2f 累积买入股数：%d 累积买入金额：%.2f 剩余金额：%.2f", size, start, count, sum, less));
+            System.out.println(String.format("本次买入：%d 买入价格：%.2f 累积买入股数：%d 累积买入金额：%.2f 平均成本：%.2f 剩余金额：%.2f", size, start, count, sum,(sum/count), less));
             //跌des个点
             start = start - (start * des);
             //买入递增
